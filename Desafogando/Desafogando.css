@@ -1,0 +1,300 @@
+/*fonte bem vindo 2*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/*font principal*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*font bem-vindo*/
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Press+Start+2P&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --braco-acinzentado:#e8f1f2;
+    --cinza:#646363;
+    --azul-claro:#1b98e0;
+    --azul-verdeado:#247ba0;
+    --azul-indoproescuro:#006494;
+    --azul-escuro:#13293d;
+    --font-pricipal:'Poppins', sans-serif;
+    --font-bem-vindo:'Poiret One', cursive;
+}
+@keyframes animação{
+    from{  
+        background-position: 0% 50%;     
+    }
+    to{
+        background-position: 100% 50%;
+    }
+}
+
+body{
+    animation: animação 10s ease alternate infinite ;
+    background: linear-gradient(-45deg,#e8f1f273,#1b98e0,#247ba0,#006494,#13293d );
+    background-size: 300% 300%;
+    font-family: var(--font-pricipal);
+    background-color:var(--azul-verdeado) ;
+    overflow-x: hidden;
+}
+header{
+    padding-bottom: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+#timer{
+    color: var(--azul-escuro);
+    font-size: 1.5em;
+}
+a{
+    color: var(--braco-acinzentado);
+    text-decoration: none;
+    transition: 0.5s;
+}
+a:hover{
+    transform: scale(1.2);
+    text-shadow: 5px 5px 10px rgba(99, 65, 65, 0.521);
+
+}
+
+main{
+    margin: auto;
+    background-color: var(--braco-acinzentado);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.63);
+    max-width: 1000px;
+    min-height: 900px;
+    padding: 25px;
+    border-radius: 10px;
+}
+h1{
+    font-family:var(--font-titulos);
+}
+h2{
+    font-weight: 500;
+}
+p{
+    color:var(--cinza);
+}
+footer{
+    background-color: var(--azul-escuro);
+    color: var(--braco-acinzentado);
+    text-align: center;
+    font-style: italic;
+}
+.alinhamento-header{
+    padding: 0px 8px;
+    color: var(--braco-acinzentado);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.alinhamento-header:hover{
+    transform: scale(1.2);
+}
+#alinhamento-header01{
+    display: flex;
+    
+}
+input {
+    padding: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: var(--azul-escuro);
+    margin-bottom: 20px;
+}
+.alinhamento-timer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.color-menu> #timer{
+    color: var(--braco-acinzentado);
+}
+/*pagina bem-vindo*/
+
+
+#alinhamente-bem-vindo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    flex-direction: column;
+}
+#wellcome{
+    color: var(--braco-acinzentado);
+    font-family:'Lora', serif;
+    font-size: 4vmax;
+    padding-bottom: 40px;
+
+}
+#shadow-h1{
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
+}
+
+a>#entrar-wellcome{
+    color: var(--braco-acinzenta);
+    
+}
+
+#money> img{
+    position: absolute;
+    width: 60px;
+    animation-name: fly;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+@keyframes fly{
+    from{transform: translateX(53vw);
+    }
+    to{transform: translateY(-150vw);
+    }
+}
+
+/*Pagina principal*/
+#saldo-diario > h2{
+    padding-top: 50px;
+}
+#saldo-diario > p {
+    text-indent: 30px;
+}
+#calendario-mes{
+    border-radius: 5px;
+    transition: 0.2s;
+}
+#calendario-mes:hover{
+    transform: scale(1.05);
+}
+#proximas-dividas > h2{
+    padding-top: 50px;
+}
+@keyframes icon{
+    to{transform: translateX(30px);}
+}
+#icon-back>img{
+    animation: icon 1s ease alternate infinite;
+    margin-top: 33vh;
+    width: 70px;
+    height: 70px;
+}
+
+/*pagina info do site*/
+#sobre>h1 {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+#sobre>h2{
+    text-indent: 30px;
+    padding-top: 20px;
+}
+#sobre>p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-indent: 30px;
+}
+
+
+/*pagina dos gastos diarios*/
+
+#ajuste {
+    padding: 20px 60px;
+}
+#ajuste > h1 {
+    padding-bottom: 30px;
+}
+#ajuste > h2 {
+    padding-top: 60px;
+}
+#ajuste > p {
+    padding-bottom: 20px;
+}
+
+#gasto-diario{
+    width: 150px;    
+}
+
+#valor-gasto{
+    width: 60px;
+}
+#show-calculator >#content{
+    display: none;
+}
+#show-calculator:hover >#content{
+    display: flex;
+}
+#date{
+    margin-top: 30px;
+}
+
+
+
+/*pagina de login*/
+#ajustelogin{
+    padding-bottom: 60px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#ajustando-login{
+    background-color: var(--azul-indoproescuro);
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    border-radius: 10px;
+    height: 340px;
+}
+
+#ajustando-login > input{
+    font-weight: bold;
+    width: 300px;
+    padding: 1px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.link-saiba-mais{
+    padding-top: 20px;
+    text-align: center;
+    color: var(--azul-claro);
+    text-decoration: underline;
+   
+    
+}
+.link-saiba-mais:hover{
+    font-weight: bold;
+}
+
+#botao-login{
+    text-align: center;
+    background-color: var(--azul-escuro);
+    width: 90px;
+    padding: 4px;
+    border-radius: 5px;
+    
+}
+#botao-login:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
+/*Pagina de contatos*/
+
+#lista-contatos{
+    display: flex;
+    justify-content: space-around;
+
+}

@@ -1,0 +1,79 @@
+/*font principal*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*font bem-vindo*/
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Press+Start+2P&display=swap');
+
+/*font titulo*/
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --braco-acinzentado:#e8f1f2;
+    --cinza:#646363;
+    --azul-claro:#1b98e0;
+    --azul-verdeado:#247ba0;
+    --azul-indoproescuro:#006494;
+    --azul-escuro:#13293d;
+    --font-pricipal:'Poppins', sans-serif;
+    --font-bem-vindo:'Poiret One', cursive;
+}
+body{
+    background-color: var(--azul-escuro);
+}
+#alinhamente-bem-vindo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    flex-direction: column;
+}
+h1{
+    color: var(--braco-acinzentado);
+    font-family: var(--font-bem-vindo);
+    font-size: 5em;
+    font-style: italic;
+    padding-bottom: 20px;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+#timer{
+    color: var(--azul-escuro);
+    font-size: 1.5em;
+}
+a{
+    color: var(--braco-acinzentado);
+    text-decoration: none;
+    transition: 0.5s;
+}
+a:hover{
+    transform: scale(1.2);
+
+
+}
+
+
+/*}
+a:after{
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    background: brown;
+    border-radius: 10px;
+    box-sizing: border-box;
+    content: 'mudou';
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+    
+}*/

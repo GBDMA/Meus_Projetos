@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="desafogando.css">
+    <!--calendario-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body id="body-gasto" onload="initTime();" >
+    <header>
+      <nav>
+        <a href="index.html">HOME</a>
+        <div id="alinhamento-header01">
+            <a href="login.html"class="alinhamento-header">LOGIN</a>
+            <a href="intro.html"class="alinhamento-header">SOBRE</a>
+            <a href="contato.html" class="alinhamento-header">CONTATO</a>
+        </div>
+    </nav>
+    </header>
+    <main>
+      <section>
+
+      <div class="alinhamento-timer">
+        <h1>Conte-me com o que você gastou hoje.</h1><span id="timer">horas</span>
+      </div>
+      <div id="ajuste">
+          
+        <p>Coloque 1 gasto por vez.</p>
+        <input type="text" name="gasto-diario" id="gasto-diario" placeholder="com:">
+        
+        <input type="number" name="valor" id="valor-gasto" placeholder="valor:">
+        
+
+        <input type="button" value="calcular" onclick="caldiario()"> <br>
+        
+        <select name="gastos" id="gastos-tabela" size="10">
+          <option>Seus gastos!</option>
+        </select>
+ 
+
+        <h2>Selecione a data que deseja saber com o que foi gasto.</h2>
+        <input id="date" type="date" >
+      </div>
+
+      </section>
+    </main>
+    <footer> Feito por Guilherme e Gabriel</footer>
+    <script src="desafogando.js"></script>
+</body>
+</html>
