@@ -1,0 +1,1 @@
+window.alert('MELHOR ANIME DE TODOS')

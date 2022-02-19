@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: rgba(80, 80, 80, 1);
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding: 180px 30%;
+    font-family: roboto;
+    color: white;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+
+.section-p {
+    background-image: url("normal.jpg");
+}
+
+.section-s {
+    background-image: url("1.jpg");
+}
+
+.section-t {
+    background-image: url("god.jpg");
+}
+
+.section-qua {
+    background-image: url("blue.jpg");
+}
+
+.section-qui {
+    background-image: url("superior.jpg");
+}
+
+.section-sex {
+    background-image: url("ultra.jpg");
+}
