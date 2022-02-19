@@ -1,0 +1,257 @@
+:root{
+    --bg:#bfddf3;
+    --bg-painel:#bfddf3s;
+    --bg-titulos:#0077ff;
+    --bg-texto:#000000;
+    --bg-fonte-preto:#000000;
+    --bg-fonte:#ffffff;
+
+    
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    margin-top: 200px;
+    background-color: var(--bg);
+}
+/*AONDE ESTA O CALENDARIO*/
+
+.bv{
+    width: 250px;
+    height: 250px;
+    background-color: var(--bg-painel);
+    border: 1.5px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    margin: auto;
+    min-width: 320px;
+    max-width: 800px;
+}
+.mobile-menu{
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 15px;
+    height: 1px;
+    background-color: #000000;
+    margin: 4px;
+}
+.mobile-menu:hover{
+    display: block;
+}
+.mobile-menu>li{
+    display: none;
+    font-size: 20px;
+    color: #c94739;
+    text-decoration: none;
+    padding: 20px;
+}
+@media (max-width: 999px){
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: #23232e;
+    }
+}
+/*JANEIRO*/
+#diames{
+    color: var(--bg-fonte-preto);
+    font-size: 20px;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    left: 10px;
+}
+#dia-mes:hover{
+background-color: rgb(179, 177, 177);
+}
+/*2021*/
+#ano{
+    color: var(--bg-fonte-preto);
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 10%;
+    left: 50px;
+    
+}
+#ano:hover{
+    background-color: rgb(179, 177, 177);
+}
+/*SELECIONADOR DE ANO*/
+.selecionador-ano{
+    display: flex;
+    align-items: center;
+}
+/* ANO ANTERIOR (<)*/
+l.bt_ant{
+    color: var(--bg-fonte-preto);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 15px;
+    
+    
+    
+
+}
+.bt_ant:hover{
+    background-color: rgb(179, 177, 177);
+}
+/*PROXIMO ANO (>)*/
+.bt_pro{
+    color: var(--bg-fonte-preto);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 00px;
+    
+
+    
+}
+.bt_pro:hover{
+    background-color: rgb(179, 177, 177);
+}
+/*DIAS DA SEMANA E DIAS NUMERICOS*/
+.calendario_mes{
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+#data{
+display: grid;
+grid-template-columns: repeat(7,1fr);
+gap: 10px;
+cursor: pointer;
+
+}
+.dia{
+    width: 50%;
+    border-radius: 25%;
+    background-color: #0077ff;
+}
+.ant_dia{
+    color: #98a0a0;
+}
+
+.bv .mes-anterior, .bv .proximo-mes{
+    color: #fafeff;
+}
+.bv .mes-anterior:hover, .bv .proximo-mes:hover{
+    background: #98a0a0;
+    border-radius: 90px;
+}
+.bv .proximo-mes{
+    color: #cbd1d2;
+}
+.evento{
+    position: relative;
+}
+.evento::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    left: 50%;
+    bottom: 7px;
+    margin: -3.5px 0 0 -3.5px;
+    background: #00addf;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+.evento:hover::after{
+    background: #f9f9f9;
+
+}
+.evento .dia-atual:after{
+    background: #f9f9f9;
+}
+/*DIAS DA SEMANA E DIAS NUMERICOS*/
+/*MOVIMENTO DO BOTÃO*/
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}/*BOTÃO*/
+label{
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background-color: grey;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+    right: 130px;
+    bottom: 20px;
+    
+    
+}/*FUNDO*/
+label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius:90px ;
+    transition: 0.2s;
+}/*BOLINHA DO BOTÃO*/
+input:checked + label {
+    background-color: var(--bg-titulos);
+}/*EFEITO DE FUNDO AZUL*/
+
+input:checked + label::after {
+    left: calc(100% - 2px);
+    transform: translateX(100%);
+}/*MOVIMENTO DA BOLINHA DO BOTÃO*/
+label:active:after{
+    width: 45px;
+}/*EFEITO DE ESTICAR A BOLINHA BRANCA*/
+.escuro{
+    font-weight: 600;
+    position: relative;
+    left: 280px;
+    bottom: 0px;
+}
+
+
+@media (width: 999px) {
+    
+
+    html {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    .bv{
+        width: 220px;
+        height: 220px;
+        background-color: var(--bg-painel);
+        border: 1.5px solid black;
+        border-radius: 30px;
+        padding: 20px;
+        margin: auto;
+        
+    }
+}
