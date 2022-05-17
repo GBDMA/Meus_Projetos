@@ -1,0 +1,37 @@
+// AULA LISTA DE TAREFAS.
+
+* Destribuir todas as fUNCTION para cada serviço.
+
+* Formas de Key para teclas:
+  - keypress: Evento de quando clica na tecla.
+  - keyup: Evento de quando clica segura e solta a tecla.
+  - keydown: Evento de quando clica segura a teclas.
+
+  #Sempre procurar keyCode para efetuar o evento da function. 
+
+* Focus(): Elemento HTML faz a barra voltar piscando do input.
+
+* setAttribute: Adiciona um atributo no HTML.
+
+* function salvarTarefas() {
+    const liTarefas = tarefas.querySelectorAll('li');
+    const listaDeTarefas = [];
+
+    for (let tarefas of liTarefas) {
+        let tarefaTexto = tarefas.innerText;
+        tarefaTexto = tarefaTexto.replace('Apagar', '').trim();
+        listaDeTarefas.push(tarefaTexto);
+    }
+    const tarefasJSON = JSON.stringify(listaDeTarefas);
+    localStorage.setItem('tarefas', tarefasJSON);
+
+};
+    - Motivo para criar o Array: Criar um Json com uma unica String.
+     #Json um formato de Texto para Salvar Dados entre Sistemas;
+
+
+* localStorage: E global do Navegador.
+
+#JSON.stringify: CONVERTE QUALQUER ELEMENTO PARA UMA STRING.
+
+#JSON.parse: Converte de volta para um objeto JavaScript;
