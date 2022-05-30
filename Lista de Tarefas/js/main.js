@@ -1,12 +1,12 @@
 // Selecionar input-tarefa
 // Selecionar button btn-tarefa
 // Selecionar ul tarefas
-// Crair Evento de click, porem pode utiliza Form HTML
+// Crair Evento de click, porem pode utiliza Form HTML;
 // Criar um Li
 
 
 
-/* Selecioando Tarefas */
+/* Selecionando Tarefas */
 const inputTarefa = document.querySelector('.input-tarefa');
 const btnTarefa = document.querySelector('.btn-tarefa');
 const tarefas = document.querySelector('.tarefas');
@@ -45,6 +45,19 @@ function salvarTarefas() {
 
 };
 
+
+/* Le as Tarefas e Jogar de volta ao HTML */
+
+function adicionaTarefasSalvas() {
+    const tarefas = localStorage.getItem('tarefas');
+    const listaDeTarefas = JSON.parse(tarefas);
+
+    for (let tarefas of listaDeTarefas) {
+        criaTarefa(tarefas);
+    }
+};
+
+    adicionaTarefasSalvas();
 
 /* Criando Botão Apagar */
 function criaBotaoApagar(li) {
@@ -92,15 +105,8 @@ function limpaInput() {
 };
 
 
-/* Le as Tarefas e Jogar de volta ao HTML */
 
-function adicionaTarefasSalvas() {
-    const tarefas = localStorage.getItem('tarefas');
-    const listaDeTarefas = JSON.parse('tarefas');
 
-    for (let tarefa of listaDeTarefas) {
-        criaTarefa(tarefa);
-    }
-};
+
 
 
