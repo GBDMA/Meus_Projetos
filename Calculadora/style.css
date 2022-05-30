@@ -1,0 +1,94 @@
+:root {
+    --primeira-cor: rgb(33, 182, 241);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primeira-cor);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus {
+    outline: 1px solid black;
+}
+
+form button {
+    border: none;
+    background: var(--primeira-cor);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: rgb(121, 216, 253) ;
+}
+
+.calculadora {
+    width: 400px;
+}
+
+.display {
+    font-size: 2em;
+    width: 100%;
+    text-align: right;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    border: none;
+    background: #dfdfdf;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #9e9e9e;
+}
+
+.btn-eq {
+    background: royalblue;
+}
+
+.btn-eq:hover {
+    background: rgb(94, 124, 213);
+}
+
+.btn-clear {
+    background: rgb(198, 59, 59);
+}
+
+.btn-clear:hover {
+    background: rgb(234, 99, 99);
+}
